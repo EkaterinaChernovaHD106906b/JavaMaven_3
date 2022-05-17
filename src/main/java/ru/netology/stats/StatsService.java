@@ -3,7 +3,7 @@ package ru.netology.stats;
 import javax.swing.*;
 
 public class StatsService {
-    public long sum(int[] sales) {
+    public int sum(int[] sales) {
         int sum = 0;
         for (int sale : sales) {
             sum += sale;
@@ -45,26 +45,13 @@ public class StatsService {
 
             month = i;
         }
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
+        int sum =  sum(sales);
         int mediumSum = sum / month;
         return mediumSum;
     }
 
     public int AmountMonthsUnderMedium(int[] sales) {
-        int month = 0;
-        int i;
-        for (i = 0; i <= sales.length; i++) {
-
-            month = i;
-        }
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int mediumSum = sum / month;
+        int mediumSum = Medium(sales);
         int amount = 0;
 
         for (int sale : sales) {
@@ -76,17 +63,7 @@ public class StatsService {
     }
 
     public int AmountMonthsOverMedium(int[] sales) {
-        int month = 0;
-        int i;
-        for (i = 0; i <= sales.length; i++) {
-
-            month = i;
-        }
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int mediumSum = sum / month;
+       int mediumSum = Medium(sales);
         int amount = 0;
 
         for (int sale : sales) {
