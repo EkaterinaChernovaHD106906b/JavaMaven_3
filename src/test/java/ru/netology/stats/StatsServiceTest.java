@@ -35,7 +35,7 @@ public class StatsServiceTest {
     public void shouldFindMedium() {
         StatsService manager = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.Medium(sales);
+        int actual = manager.medium(sales);
         int expected = 15;
         Assertions.assertEquals(expected, actual);
     }
@@ -44,7 +44,7 @@ public class StatsServiceTest {
     public void shouldFindAmountMonthsUnderMedium() {
         StatsService manager = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.AmountMonthsUnderMedium(sales);
+        int actual = manager.amountMonthsUnderMedium(sales);
         int expected = 5;
         Assertions.assertEquals(expected, actual);
     }
@@ -53,7 +53,7 @@ public class StatsServiceTest {
     public void shouldFindAmountMonthOverMedium() {
         StatsService manager = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.AmountMonthsOverMedium(sales);
+        int actual = manager.amountMonthsOverMedium(sales);
         int expected = 5;
         Assertions.assertEquals(expected, actual);
     }

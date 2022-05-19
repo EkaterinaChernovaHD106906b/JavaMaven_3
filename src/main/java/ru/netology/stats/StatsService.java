@@ -37,7 +37,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int Medium(int[] sales) {
+    public int medium(int[] sales) {
 
         int month = 0;
         int i;
@@ -50,8 +50,8 @@ public class StatsService {
         return mediumSum;
     }
 
-    public int AmountMonthsUnderMedium(int[] sales) {
-        int mediumSum = Medium(sales);
+    public int amountMonthsUnderMedium(int[] sales) {
+        int mediumSum = medium(sales);
         int amount = 0;
 
         for (int sale : sales) {
@@ -62,8 +62,8 @@ public class StatsService {
         return amount;
     }
 
-    public int AmountMonthsOverMedium(int[] sales) {
-       int mediumSum = Medium(sales);
+    public int amountMonthsOverMedium(int[] sales) {
+       int mediumSum = medium(sales);
         int amount = 0;
 
         for (int sale : sales) {
